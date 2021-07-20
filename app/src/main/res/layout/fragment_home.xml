@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_home"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Dashboard"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@android:color/holo_green_light"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#D6D3D3">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="poin teman"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="8dp" />
+            <TextView
+                android:id="@+id/poin_teman"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="110"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tier_teman"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="sahabat jalan"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:textColor="@android:color/holo_green_dark"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/default_profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_cari_teman_jalan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/logo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="cari teman jalan"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|bottom"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_kepolisian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/logo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="kepolisian terdekat"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|bottom"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_lapor_kejahatan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/logo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="laporkan kejahatan"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|bottom"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_kosong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        android:text="Sign Out" />
+
+</LinearLayout>

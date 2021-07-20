@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "303693809155",
+    "project_id": "teman-jalan-4ac60",
+    "storage_bucket": "teman-jalan-4ac60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303693809155:android:98e760dfce6c5cfd8d3036",
+        "android_client_info": {
+          "package_name": "id.diantara.temanjalan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303693809155-ipo0rickteca193p6m30imtj7ied3u6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2cDcJEQtTaE6GDmv2ue78-halViD84iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303693809155-ipo0rickteca193p6m30imtj7ied3u6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
